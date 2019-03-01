@@ -13,6 +13,8 @@ namespace Entities
         [Key]
         public int ClienteId { get; set; }
 
+        public DateTime Fecha { get; set; }
+
         public string Nombres { get; set; }
 
         public string NoTelefono { get; set; }
@@ -27,6 +29,7 @@ namespace Entities
         public Cliente()
         {
             ClienteId = 0;
+            Fecha = DateTime.Now;
             Nombres = string.Empty;
             NoTelefono = string.Empty;
             NoCedula = string.Empty;
@@ -34,9 +37,10 @@ namespace Entities
             Deuda = 0;
         }
 
-        public Cliente(int clienteId, string nombres, string noTelefono, string noCedula, string direccion, int deuda)
+        public Cliente(int clienteId, DateTime fecha, string nombres, string noTelefono, string noCedula, string direccion, int deuda)
         {
             ClienteId = clienteId;
+            Fecha = fecha;
             Nombres = nombres;
             NoTelefono = noTelefono;
             NoCedula = noCedula;

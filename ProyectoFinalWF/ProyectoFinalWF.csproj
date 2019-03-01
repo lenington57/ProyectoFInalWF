@@ -81,10 +81,21 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\style4.css" />
     <Content Include="Content\toastr.css" />
     <Content Include="Content\toastr.min.css" />
     <Content Include="Default.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Registros\ClienteWF.aspx" />
+    <Content Include="Registros\DepartamentoWF.aspx" />
+    <Content Include="Registros\UsuarioWF.aspx" />
+    <Content Include="Resources\5a9c3f9f03593.jpeg" />
+    <Content Include="Resources\comprador.jpg" />
+    <Content Include="Resources\conf_producto.png" />
+    <Content Include="Resources\Dinero_43.jpg" />
+    <Content Include="Resources\im-html-o3884083.jpg" />
+    <Content Include="Resources\mejores-herramientas-factuacion-electronica-810x607.jpg" />
+    <Content Include="Resources\Usuario.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -147,6 +158,27 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registros\ClienteWF.aspx.cs">
+      <DependentUpon>ClienteWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\ClienteWF.aspx.designer.cs">
+      <DependentUpon>ClienteWF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\DepartamentoWF.aspx.cs">
+      <DependentUpon>DepartamentoWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\DepartamentoWF.aspx.designer.cs">
+      <DependentUpon>DepartamentoWF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\UsuarioWF.aspx.cs">
+      <DependentUpon>UsuarioWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\UsuarioWF.aspx.designer.cs">
+      <DependentUpon>UsuarioWF.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -171,7 +203,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Consultas\" />
     <Folder Include="Models\" />
-    <Folder Include="Registros\" />
     <Folder Include="Reportes\" />
     <Folder Include="Utilitarios\" />
   </ItemGroup>

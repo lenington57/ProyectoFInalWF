@@ -13,6 +13,8 @@
     <script src="/Scripts/bootstrap.min.js"></script>
     <script src="/Scripts/bootstrap.bundle.min.js"></script>
     <script src="/Scripts/toastr.min.js"></script>
+
+
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
