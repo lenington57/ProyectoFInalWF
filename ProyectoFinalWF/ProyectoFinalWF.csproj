@@ -88,6 +88,10 @@
     <Content Include="Global.asax" />
     <Content Include="Registros\ClienteWF.aspx" />
     <Content Include="Registros\DepartamentoWF.aspx" />
+    <Content Include="Registros\EntradaWF.aspx" />
+    <Content Include="Registros\FacturaWF.aspx" />
+    <Content Include="Registros\PagoWF.aspx" />
+    <Content Include="Registros\ProductoWF.aspx" />
     <Content Include="Registros\UsuarioWF.aspx" />
     <Content Include="Resources\5a9c3f9f03593.jpeg" />
     <Content Include="Resources\comprador.jpg" />
@@ -95,6 +99,7 @@
     <Content Include="Resources\Dinero_43.jpg" />
     <Content Include="Resources\im-html-o3884083.jpg" />
     <Content Include="Resources\mejores-herramientas-factuacion-electronica-810x607.jpg" />
+    <Content Include="Resources\new-product-seal_23-2147503128.jpg" />
     <Content Include="Resources\Usuario.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -171,6 +176,34 @@
     </Compile>
     <Compile Include="Registros\DepartamentoWF.aspx.designer.cs">
       <DependentUpon>DepartamentoWF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\EntradaWF.aspx.cs">
+      <DependentUpon>EntradaWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\EntradaWF.aspx.designer.cs">
+      <DependentUpon>EntradaWF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\FacturaWF.aspx.cs">
+      <DependentUpon>FacturaWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\FacturaWF.aspx.designer.cs">
+      <DependentUpon>FacturaWF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\PagoWF.aspx.cs">
+      <DependentUpon>PagoWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\PagoWF.aspx.designer.cs">
+      <DependentUpon>PagoWF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registros\ProductoWF.aspx.cs">
+      <DependentUpon>ProductoWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registros\ProductoWF.aspx.designer.cs">
+      <DependentUpon>ProductoWF.aspx</DependentUpon>
     </Compile>
     <Compile Include="Registros\UsuarioWF.aspx.cs">
       <DependentUpon>UsuarioWF.aspx</DependentUpon>

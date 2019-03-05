@@ -1,4 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="DepartamentoWF.aspx.cs" Inherits="ProyectoFinalWF.Registros.DepartamentoWF" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PagoWF.aspx.cs" Inherits="ProyectoFinalWF.Registros.PagoWF" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -6,7 +7,7 @@
     <div class="form-row justify-content-center">
         <aside class="col-sm-6">
             <div class="card">
-                <div class="card-header text-uppercase text-center text-primary">Departamento</div>
+                <div class="card-header text-uppercase text-center text-primary">Pago</div>
                 <article class="card-body">
                     <form>
                         <div class="col-md-6 col-md-offset-3">
@@ -14,16 +15,33 @@
                                 <div class="form-group">
                                     <asp:Label ID="Label3" runat="server" Text="Id"></asp:Label>
                                     <asp:Button class="btn btn-info btn-sm" ID="BuscarButton" runat="server" Text="Buscar" />
-                                    <asp:TextBox class="form-control" ID="departamentoIdTextBox" Text="0" type="number" runat="server"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="pagoIdTextBox" Text="0" type="number" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
-                        <asp:Image ID="UsuarioImage" runat="server" Height="164px" ImageUrl="~/Resources/5a9c3f9f03593.jpeg" runat="server" Width="300px" AlternateText="Imagen no disponible" ImageAlign="right" />
+                        <asp:Image ID="UsuarioImage" runat="server" Height="260px" ImageUrl="~/Resources/Dinero_43.jpg" runat="server" Width="265px" AlternateText="Imagen no disponible" ImageAlign="right" />
                         <div class="col-md-6 col-md-offset-3">
                             <div class="container">
                                 <div class="form-group">
-                                    <asp:Label ID="Label4" runat="server" Text="Nombre"></asp:Label>
-                                    <asp:TextBox class="form-control" ID="nombreTextBox" placeholder="Nombre" runat="server"></asp:TextBox>
+                                    <asp:Label ID="Label10" runat="server" Text="Fecha"></asp:Label>
+                                    <asp:TextBox class="form-control" ID="fechaTextBox" type="date" runat="server"></asp:TextBox>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="container">
+                                <div class="form-group">
+                                    <asp:Label ID="Label7" runat="server" Text="Cliente"></asp:Label>
+                                    <asp:DropDownList class="form-control" ID="clienteDropDownList" runat="server">
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-md-offset-3">
+                            <div class="container">
+                                <div class="form-group">
+                                    <asp:Label ID="Label4" runat="server" Text="Monto"></asp:Label>
+                                    <asp:TextBox class="form-control" ID="montoTextBox" placeholder="0" type="number" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>

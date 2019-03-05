@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ClienteWF.aspx.cs" Inherits="ProyectoFinalWF.Registros.ClienteWF" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FacturaWF.aspx.cs" Inherits="ProyectoFinalWF.Registros.FacturaWF" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
@@ -7,7 +7,7 @@
     <div class="form-row justify-content-center">
         <aside class="col-sm-6">
             <div class="card">
-                <div class="card-header text-uppercase text-center text-primary">Cliente</div>
+                <div class="card-header text-uppercase text-center text-primary">Factura</div>
                 <article class="card-body">
                     <form>
                         <div class="col-md-6 col-md-offset-3">
@@ -15,11 +15,11 @@
                                 <div class="form-group">
                                     <asp:Label ID="Label3" runat="server" Text="Id"></asp:Label>
                                     <asp:Button class="btn btn-info btn-sm" ID="BuscarButton" runat="server" Text="Buscar" />
-                                    <asp:TextBox class="form-control" ID="clienteIdTextBox" Text="0" type="number" runat="server"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="usuarioIdTextBox" Text="0" type="number" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
-                        <asp:Image ID="UsuarioImage" runat="server" Height="285px" ImageUrl="~/Resources/comprador.jpg" runat="server" Width="211px" AlternateText="Imagen no disponible" ImageAlign="right" />
+                        <asp:Image ID="UsuarioImage" runat="server" Height="285px" ImageUrl="~/Resources/mejores-herramientas-factuacion-electronica-810x607.jpg" runat="server" Width="211px" AlternateText="Imagen no disponible" ImageAlign="right" />
                         <div class="col-md-6 col-md-offset-3">
                             <div class="container">
                                 <div class="form-group">
@@ -39,7 +39,7 @@
                         <div class="col-md-6 col-md-offset-3">
                             <div class="container">
                                 <div class="form-group">
-                                    <asp:Label ID="Label5" runat="server" Text="Número de Teléfono"></asp:Label>
+                                    <asp:Label ID="Label5" runat="server" Text="Numero de Telefono"></asp:Label>
                                     <asp:TextBox class="form-control" ID="noTelefonoTextBox" placeholder="000-000-0000" runat="server"></asp:TextBox>
                                 </div>
                             </div>
@@ -47,24 +47,24 @@
                         <div class="col-md-6 col-md-offset-3">
                             <div class="container">
                                 <div class="form-group">
-                                    <asp:Label ID="Label6" runat="server" Text="Número de Cédula"></asp:Label>
-                                    <asp:TextBox class="form-control" ID="emailTextBox" placeholder="000-0000000-0" runat="server"></asp:TextBox>
+                                    <asp:Label ID="Label6" runat="server" Text="Email"></asp:Label>
+                                    <asp:TextBox class="form-control" ID="emailTextBox" placeholder="micorreo@gmail.com" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-md-offset-3">
                             <div class="container">
                                 <div class="form-group">
-                                    <asp:Label ID="Label7" runat="server" Text="Direccion"></asp:Label>
-                                    <asp:TextBox class="form-control" ID="direccionTextBox" type="password" runat="server"></asp:TextBox>
+                                    <asp:Label ID="Label7" runat="server" Text="Contraseña"></asp:Label>
+                                    <asp:TextBox class="form-control" ID="passwordTextBox" type="password" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-6 col-md-offset-3">
                             <div class="container">
                                 <div class="form-group">
-                                    <asp:Label ID="Label1" runat="server" Text="Deuda"></asp:Label>
-                                    <asp:TextBox class="form-control" ID="deudaTextBox" placeholder="0" runat="server" Enabled="False"></asp:TextBox>
+                                    <asp:Label ID="Label8" runat="server" Text="Confirmar Contraseña"></asp:Label>
+                                    <asp:TextBox class="form-control" ID="cpasswordTextBox" type="password" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                     </form>
                 </article>
             </div>
-            <!-- card.// -->
+            <!-- card.// -->            
     </div>
     <br>
 </asp:Content>

@@ -15,7 +15,7 @@
                                 <div class="form-group">
                                     <asp:Label ID="Label3" runat="server" Text="Id"></asp:Label>
                                     <asp:Button class="btn btn-info btn-sm" ID="BuscarButton" runat="server" Text="Buscar" />
-                                    <asp:TextBox class="form-control" ID="usuarioIdTextBox" Text="0" runat="server"></asp:TextBox>
+                                    <asp:TextBox class="form-control" ID="usuarioIdTextBox" Text="0" type="number" runat="server"></asp:TextBox>
                                 </div>
                             </div>
                         </div>
